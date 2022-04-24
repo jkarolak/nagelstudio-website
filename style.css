@@ -1,0 +1,562 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*  font-family: 'Raleway',
+  sans-serif;*/
+}
+
+html {
+  background: aliceblue;
+}
+
+header {
+  height: 58px;
+}
+
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav {
+  padding: 10px 3%;
+  background-color: aliceblue;
+  z-index: 2;
+  line-height: 38px;
+  position: fixed;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+div.logo {
+  float: left;
+  width: 30%;
+}
+
+
+div.logo a {
+  font-family: 'Great Vibes', cursive;
+  font-size: 32px;
+  text-decoration: none;
+  color: #dc0077;
+  display: block;
+  text-align: left;
+}
+
+nav ul.menu {
+  float: left;
+  width: 60%;
+}
+
+nav ul.icons {
+  float: left;
+  width: 10%;
+  list-style: none;
+}
+
+
+nav ul.menu li {
+  float: left;
+  list-style: none;
+  width: calc(100%/6);
+  text-align: center;
+
+}
+
+nav ul.icons li {
+  float: left;
+  list-style: none;
+  width: 50%;
+}
+
+nav ul.icons li a {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  color: #3b5998;
+  transition: 0.3s;
+}
+
+nav ul.icons li a:hover {
+  color: #dc0077;
+}
+
+
+nav ul.menu li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+nav ul.menu li a:hover {
+  color: #dc0077;
+}
+
+
+
+
+section.animation {
+  position: relative;
+  height: 80vh;
+  background-image: url("../img/mainFoto.jpeg");
+  /* background-size: 80%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  opacity: 0.8;
+  max-width: 1068px;
+  margin: auto;
+  display: block;
+  font-family: 'Great Vibes', cursive;
+}
+
+section.animation a {
+  text-decoration: none;
+  color: white;
+
+}
+
+section.animation div {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  display: block;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: rgb(0, 0, 0, 0.4);
+  line-height: 80px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 40%;
+}
+
+section.animation div p:first-of-type {
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+  padding-top: 10px
+    /*  color: #dc0077;*/
+}
+
+/* Sekcja range */
+
+.range {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: 'Great Vibes', cursive;
+}
+
+.range .item {
+  height: 25vh;
+
+}
+
+.range .item {
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  width: 50%;
+  height: 40vh;
+}
+
+
+
+section.range p {
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  padding: 10vh 0;
+  letter-spacing: 3px;
+}
+
+section.range .item:nth-of-type(1) {
+  background-image: url(../img/naturalne_soute.jpeg);
+}
+
+section.range .item:nth-of-type(2) {
+  background-image: url(../img/przedluzane.jpeg);
+}
+
+section.range .item:nth-of-type(3) {
+  background-image: url(../img/malowane_ozdoby.jpeg);
+}
+
+section.range .item:nth-of-type(4) {
+  background-image: url(../img/gotowe_ozdoby.jpeg);
+
+}
+
+
+.range .item p {
+  font-family: 'saira', sans-serif;
+  color: white;
+  text-align: center;
+  /*  line-height: 25vh;*/
+  text-shadow: 0 0 4px black;
+  background-color: rgba(0, 0, 0, .5);
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+.range h1 {
+  font-family: 'saira condensed', sans-serif;
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+
+
+
+@media (min-width: 1024px) {
+  .range .item p {
+    padding: 0;
+    line-height: 40vh;
+    opacity: 0;
+    transition: 1s;
+    cursor: default;
+  }
+
+  .range .item:hover p {
+    opacity: 1;
+  }
+
+  .range .item {
+    background-size: 100%;
+    transition: 1s;
+  }
+
+  .range .item:hover {
+    background-size: 130%;
+  }
+
+}
+
+@media (min-width: 1600px) {
+  .range h1 {
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 45px;
+
+  }
+
+  .range .item p {
+    font-size: 40px;
+  }
+}
+
+
+/*O MNIE */
+
+section.about {
+  font-family: 'Great Vibes', cursive;
+}
+
+section.about h3 {
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  padding: 10vh 0;
+  letter-spacing: 3px;
+
+}
+
+section.about div {
+  max-width: 1920px;
+  margin: auto;
+  background-image: url(../img/manicure-870857_1920.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section.about div p {
+  font-size: 24px;
+  padding: 200px 120px;
+  background-color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: px;
+  font-weight: 600;
+  text-align: justify;
+  font-family: 'New Tegomin', cursive;
+}
+
+
+
+
+/* GALERIA ///////////////////////////////////*/
+
+
+section.gallery {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: 'Great Vibes', cursive;
+  ;
+}
+
+
+
+.gallery p {
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  padding: 10vh 0;
+  letter-spacing: 3px;
+}
+
+
+section.gallery div.mini a {
+  float: left;
+  width: 50%;
+  height: 50vh;
+  background-size: 100%;
+  display: block;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: 1s;
+}
+
+
+
+section.gallery div.mini a.mini:hover {
+  background-size: 130%;
+}
+
+section.gallery div.mini a:nth-of-type(1) {
+  background-image: url(gallery/1.jpeg);
+}
+
+section.gallery div.mini a:nth-of-type(2) {
+  background-image: url(gallery/2.jpeg);
+}
+
+section.gallery div.mini a:nth-of-type(3) {
+  background-image: url(gallery/3.jpeg);
+}
+
+section.gallery div.mini a:nth-of-type(4) {
+  background-image: url(gallery/4.jpeg);
+}
+
+section.gallery div.more {
+  margin: 0 auto;
+  width: 15%;
+  padding: 2vh 0 5vh;
+}
+
+section.gallery div.more a.more {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: black;
+  transition: .3s;
+}
+
+section.gallery div.more a.more:hover {
+  color: #dc0077;
+}
+
+
+/* KONTAKT */
+
+
+section.contact {
+  background: black;
+  color: white;
+  display: block;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+
+div.contact {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+div.contact h3 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+
+.map {
+  width: 50%;
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+.map h3 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+
+.contact .icons {
+  padding-top: 80px;
+}
+
+
+.contact i {
+  font-size: 20px;
+  padding: 10px 30px 0 0;
+}
+
+.contact a {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+
+
+
+
+
+
+
+/* STOPKA */
+
+
+footer {
+  background-color: #29a6dc;
+  color: white;
+  font-family: saira, sans-serif;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+
+
+/* FULLGALLERY */
+
+section.fullGallery {
+  margin: 5vh 5vw;
+  font-size: 0;
+}
+
+
+section.fullGallery div a img {
+  width: 25%;
+  height: 25vw;
+  padding: 1%;
+  box-shadow: 2px 2px 18px black;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+
+/* galleryAboutMe */
+
+section.galleryAboutMe {
+  margin: 5vh 5vw;
+  font-size: 0;
+}
+
+
+section.galleryAboutMe div a img {
+  height: 25vw;
+  width: 33%;
+  padding: 1%;
+  box-shadow: 2px 2px 18px black;
+  object-fit: cover;
+  object-position: center top;
+}
+
+
+/* galleryVoucher */
+
+section.galleryVoucher {
+  margin: 5vh 5vw;
+  font-size: 0;
+}
+
+
+section.galleryVoucher div a img {
+  height: 40vw;
+  width: 50%;
+  padding: 1%;
+  box-shadow: 2px 2px 18px black;
+  object-fit: cover;
+  object-position: center top;
+}
+
+
+/* PRICELIST */
+
+section.pricelist div {
+  background-image: url(/pricelist/background.jpeg);
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  font-family: 'Raleway', sans-serif;
+  min-height: 1400px;
+}
+
+section.pricelist ul {
+  position: absolute;
+  min-width: 720px;
+  display: block;
+  opacity: 1;
+}
+
+section.pricelist h2,
+section.pricelist h3 {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+section.pricelist ul>li {
+  margin: 0 30px;
+  /* width: 100%/ */
+  list-style: none;
+  display: flex;
+  border-bottom: 2px dashed gray;
+}
+
+section.pricelist li>p {
+  line-height: 70px;
+  font-size: 20px;
+}
+
+section.pricelist li>p:nth-of-type(1) {
+  width: 60%;
+  flex-grow: 1;
+}
+
+section.pricelist li>p:nth-of-type(2) {
+  width: 10%;
+  color: #dc0077;
+  font-weight: 700;
+}
