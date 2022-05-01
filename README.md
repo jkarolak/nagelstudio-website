@@ -6,4 +6,4 @@ Simple website for family member.
 - add responsiveness
 - pricelist to change
 - replace photos from pixabay.com to own 
-- add language version website (dutch, english?!)
+- add language version website (dutch)
